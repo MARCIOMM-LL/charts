@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Grath{% endblock %}
+
+{% block body %}
+    <h1>Edit Grath</h1>
+
+    {{ include('grath/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('grath_index') }}">back to list</a>
+
+    {{ include('grath/_delete_form.html.twig') }}
+{% endblock %}

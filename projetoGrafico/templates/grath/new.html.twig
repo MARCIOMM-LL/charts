@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Grath{% endblock %}
+
+{% block body %}
+    <h1>Create new Grath</h1>
+
+    {{ include('grath/_form.html.twig') }}
+
+    <a href="{{ path('grath_index') }}">back to list</a>
+{% endblock %}
